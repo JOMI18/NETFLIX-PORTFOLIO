@@ -759,7 +759,7 @@ padding: 10px 10px;
 
     .faqs{
         width: 80% !important;
-       border:  1px solid white;
+       /* border:  1px solid white; */
     }
     .faqs h1{
         font-size: 15px !important;
