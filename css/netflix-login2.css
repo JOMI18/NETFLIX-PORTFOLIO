@@ -1,0 +1,271 @@
+html body{
+   background-color: rgb(41, 41, 41);
+}
+@font-face {
+ font-family: netflix;
+ src: url(../fonts/netflix-sans-cufonfonts/NetflixSansBold.ttf);
+}
+/* width */
+::-webkit-scrollbar {
+   width: 20px;
+ }
+ /* button-arrow */
+ /* ::-webkit-scrollbar-button{
+  
+ } */
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background:rgb(46, 45, 45);
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: rgb(106, 106, 106);
+   width: 15px;
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: rgb(120, 120, 120);
+ }
+ .head{
+   border-bottom: 5px solid rgb(63, 62, 62);
+ }
+ .sign{
+   margin-right: 20px;
+   font-size: 20px;
+   font-family: netflix;
+   font-weight: 500;
+   color:#C76ED7;
+}
+.sign:hover{
+   text-decoration: underline;
+   color: #C76ED7;
+}
+
+.writings{
+ width:35% ;
+ display: flex;
+ position: absolute;
+ left: 35%;
+ top: 20%;
+ justify-content: center;
+ align-items: center;
+ /* margin: 10px; */
+ height: 90%;
+ /* border: 1px salmon solid; */
+flex-direction: column;
+}
+.steps{
+ font-family: netflix;
+color: #DCDCDC;
+ font-weight: 600;
+ padding: 0px 0px;
+}
+.align .space{
+  display: flex;
+ align-items: center;
+ 
+}
+.align  #size{
+  margin-top: 5px;
+  font-size: 15px;
+}
+.info #details{
+  margin: 5px 0px;
+ height: 70px;
+ width: 450px;
+ /* padding: 0px 0px; */
+ border-radius: 5px;
+ outline: none;
+ color:#DCDCDC;
+ background-color: rgba(33, 33, 34, 0.212);
+}
+::placeholder{
+  color: #DCDCDC;
+}
+
+.btn{
+  height: 60px;
+  width: 450px !important;
+  background: #BA0000 !important;
+  font-size: 28px !important;
+  font-weight: 450 !important;
+  color: #DCDCDC !important;
+  box-shadow: 2px 2px 2px rgb(153, 8, 8);
+  }
+  .btn:hover{
+    background: #ba0000ce !important; 
+  }
+  .dt{
+      border-top: 10px solid rgb(73, 72, 72);
+      color: white;
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      top: 110%;
+      /* align-items: center; */
+      left: 0;
+      height: 100px;
+      width: 100%;
+      justify-content: space-evenly;
+    
+    }
+    .ending{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 20px;
+    }
+  
+    .elite{
+    font-size: 15px;
+   padding: 10px 0px !important;
+   color:#73B2E5 !important;
+    }
+
+
+ @media ( max-width:492px) {
+  .info #details{
+    margin: 5px 0px;
+   height: 60px;
+   width: 350px;
+
+  }
+ 
+  .btn{
+    height: 60px;
+    width: 350px !important;
+  
+    }
+ }
+ @media ( max-width:392px) {
+  .writings{
+    width:85% ;
+    display: flex;
+    position: absolute;
+    left: 12%;
+    top: 20%;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    height: 90%;
+    /* border: 1px salmon solid; */
+   flex-direction: column;
+   }
+  .info #details{
+    margin: 5px 0px;
+   height: 50px;
+   width: 250px;
+  }
+  .align h2 {
+    font-size: 20px !important;
+    }
+   .align h5 {
+    font-size: 15px !important;
+    }
+   .align p {
+    font-size: 10px !important;
+    }
+  .btn{
+    height: 50px;
+    width: 250px !important;
+  
+    }
+ }
+ @media ( max-width:321px) {
+   .info #details{
+     height: 40px;
+     width: 280px;
+
+    }
+   .writings{
+    width:40% ;
+    left: 28%;
+    top: 35%;
+    margin: 10px;
+    height: 40%;
+   }
+   .dt{
+      top: 110%;
+      height: 200px;    
+    }
+   .ending{
+      margin-left: 20px;
+      }
+      #q{
+      font-size: 10px;
+      }
+      .ending1{
+      margin-left: 10px;
+      }
+      
+ }
+ @media ( max-width:305px) {
+   .info #details{
+     height: 40px;
+     width: 280px;
+
+    }
+   .writings{
+    width:40% ;
+    left: 28%;
+    top: 35%;
+    margin: 10px;
+    height: 40%;
+   }
+   .dt{
+      top: 110%;
+      height: 200px;    
+    }
+      
+      #q{
+      font-size: 10px;
+      }
+      .ending{
+      margin-left: 10px;
+      }
+      
+ }
+ @media ( max-width:285px) {
+   .info #details{
+     height: 40px;
+     width: 250px;
+
+    }
+   .align #btn{
+     height: 40px !important;
+     width: 250px !important;
+
+    }
+   .align h2 {
+    font-size: 20px !important;
+    }
+   .align h5 {
+    font-size: 20px !important;
+    }
+   .align p {
+    font-size: 10px !important;
+    }
+   .writings{
+    width:30% ;
+    left: 28%;
+    top: 35%;
+    margin: 10px;
+    height: 40%;
+   }
+   .dt{
+      top: 110%;
+      height: 200px;    
+    }
+   .ending{
+      margin-left: 10px;
+      }
+      #q{
+      font-size: 10px;
+      }
+      .ending1{
+      margin-left: 0px;
+      }
+      
+ }

@@ -1,0 +1,138 @@
+html body{
+    background-color: black;
+   overflow-y: scroll;
+}
+ @font-face {
+  font-family: netflix;
+  src: url(../fonts/netflix-sans-cufonfonts/NetflixSansLight.ttf);
+} 
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  /* button-arrow */
+  /* ::-webkit-scrollbar-button{
+  } */
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:rgba(128, 128, 128, 0.322)
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(106, 106, 106);
+    /* height: 60px; */
+    width: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(120, 120, 120);
+  }
+  .writings{
+    width:40% ;
+    display: flex;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    /* border: 1px solid wheat; */
+    text-align: center;
+    /* padding: 10px 0px; */
+    font-family: netflix;
+    height: 70%;
+     flex-direction: column;
+  }
+ 
+  #p{
+    font-size: 20px;
+  }
+  .e{
+   margin: 20px 0px;
+  }
+  .y{
+   
+   font-size: 20px;
+  }
+  #n{
+    height: 80px;
+    width: 80px;
+    padding-left: 38px !important;
+    background-color: transparent;
+    color: white;
+   margin: 10px 10px;
+  }
+  #n:hover{
+    outline: 1px solid grey;
+  }
+.fp{
+height: 40px;
+margin: 10px;
+border: 1px solid rgba(245, 237, 237, 0.938);
+color: white;
+/* font-size: 25px; */
+outline: none;
+border-radius: 10px;
+width: 220px;
+background-color: rgb(26, 25, 25);
+}
+.np{
+height: 40px;
+margin: 10px;
+border: 1px solid rgba(245, 237, 237, 0.938);
+color: white;
+font-size: 15px;
+outline: none;
+border-radius: 10px;
+width: 100px;
+background-color: rgb(26, 25, 25);
+}
+@media (max-width:841px) {
+  .writings{
+    width:70% ;
+    left: 15%;
+    top: 20%;
+  }
+}
+@media (max-width:480px) {
+  .writings{
+    width:80%;
+    left: 10%;
+    top: 20%;
+    height: 60%;
+  }
+  .fp{
+display: none;
+    }
+}
+@media (max-width:395px) {
+  .writings{
+    width:90% ;
+    left: 3%;
+    top: 15%;
+    height: 80%;
+  }
+}
+@media (max-width:280px) {
+  .writings{
+    width:90% ;
+    left: 3%;
+    top: 15%;
+    height: 80%;
+  }
+  #p{
+    font-size: 15px;
+  }
+  .e{
+   margin: 15px 0px;
+   font-size: 20px;
+  }
+  .y{
+   
+   font-size: 15px;
+  }
+}

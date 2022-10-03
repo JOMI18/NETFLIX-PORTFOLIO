@@ -1,0 +1,151 @@
+html body{
+   background-color: rgb(41, 41, 41);
+}
+@font-face {
+ font-family: netflix;
+ src: url(../fonts/netflix-sans-cufonfonts/NetflixSansBold.ttf);
+}
+/* width */
+::-webkit-scrollbar {
+   width: 20px;
+ }
+ /* button-arrow */
+ /* ::-webkit-scrollbar-button{
+  
+ } */
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background:rgb(36, 35, 35);
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: rgb(106, 106, 106);
+   width: 15px;
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: rgb(120, 120, 120);
+ }
+ .head{
+   border-bottom: 5px solid rgb(63, 62, 62);
+ }
+ .sign{
+   margin-right: 20px;
+   font-size: 20px;
+   font-family: netflix;
+ color: #5094E5;
+  letter-spacing: 1px;
+}
+.sign:hover{
+   text-decoration: underline;
+  color:#5094E5 ;
+}
+.clr{
+  color:#DCDCDC !important;
+}
+.align .space{
+   display: flex;
+ align-items: center;
+  
+ }
+.align  #size{
+   margin-top: 10px;
+   font-size: 15px;
+ }
+
+.writings{
+ width:40% ;
+ display: flex;
+ position: absolute;
+ left: 30%;
+ text-align: center;
+ top: 25%;
+ justify-content: center;
+ align-items: center;
+ margin: 10px;
+ height: 70%;
+ flex-direction: column;
+}
+.steps{
+ font-family: netflix;
+ padding: 2px 0px;
+}
+ .align2{ 
+  margin-top: 50px;
+  margin-left: 450px;
+  }
+  #shadow{
+    height: 40px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(124, 101, 101, 0.432);
+    margin-left: 0px;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    width: 320px;
+    background-color: rgb(26, 25, 25);
+ }
+ #tick{
+    color: white;
+    margin-right: 5px;
+    margin-top: -12px;
+ }
+ .pace{
+    display: flex;
+    align-items: center;
+ } 
+ .dt{
+   border-top: 10px solid rgb(73, 72, 72);
+   /* color: white; */
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   top: 110%;
+   left: 0;
+   height: 300px;
+   width: 100%;
+   align-items: center;
+   justify-content: space-evenly;
+ 
+ }
+ .ending{
+  display: flex;
+  flex-direction: column;
+ /* margin-top: 30px; */
+ }
+
+ .elite{
+  padding: 20px 0px ;
+ font-size: 15px;
+ color: #5094E5 !important;
+ /* margin-bottom: 30px; */
+ }
+
+ @media (max-width:311px) {
+   .align #btn{
+      height: 40px !important;
+      width: 200px !important;
+ 
+     }
+    .pace p {
+     font-size: 15px !important;
+     }
+     .sign{
+      margin-right: 5px;
+      font-size: 20px;
+  
+   }
+   .ending{
+      margin-left: 10px;
+      width: 100px;
+      font-size: 10px;
+      margin-top: 20px;
+      }
+      #q{
+         font-size: 15px;
+      }
+ 
+
+ } 

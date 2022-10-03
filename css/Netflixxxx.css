@@ -1,0 +1,1119 @@
+@font-face {
+    font-family:netflix;
+    src: url(../fonts/netflix-sans-cufonfonts/NetflixSansBold.ttf);
+}
+html body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+ /* Track */
+  ::-webkit-scrollbar-track {
+    background:rgba(36, 35, 35, 0.781)
+  } 
+/* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(106, 106, 106);
+    /* height: 60px; */
+    width: 10px;
+  }
+/* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(120, 120, 120);
+  }
+
+.container .netflix-header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* padding: 0px 50px; */
+    width: 100%;
+    /* border: 1px solid white !important; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.container .netflix-header img{
+margin-left: 30px;
+}
+.container .netflix-header a{
+    color: #C56ED7;
+    text-decoration: none;
+    font-weight: 500 !important;
+    background-color: #AA0000;
+    padding: 8px 18px;
+    font-family: netflix;
+    /* height: 50px; */
+    margin-right: 50px;
+    border-radius: 2px;
+}
+/* .sert{
+    box-shadow: inset 4px 4px 5px black;
+
+} */
+.content{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: netflix;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .content::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    /* box-shadow: inset 120px 120px 120px black; */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.884), transparent);
+}
+.content::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid white; */
+    z-index: 1;
+    /* box-shadow: inset 120px 120px 120px black; */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.644), transparent);
+} 
+.content .fit{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    object-fit:cover;
+}
+.content .info{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+.content .info .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #DADAD9;
+}
+.content .info .heading h2{
+    font-size: 50px;
+    /* width: 80%; */
+    letter-spacing: 2px;
+}
+.content .info .heading h5{
+    font-size: 20px;
+    /* letter-spacing: 1px; */
+    font-weight: 400;
+    padding: 20px 10px;
+}
+.content .info .heading p{
+    font-size: 16px;
+    /* letter-spacing: 1px; */
+    font-weight: 400;
+    padding: 15px 0px;
+}
+.content .info .email{
+    
+    display: flex;
+    /* border: 1px solid white; */
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+.content .info .email #input{
+    font-size: 16px;
+    border: 1px solid rgb(82, 77, 77);
+    outline: none;
+    border-radius: 2px;
+    padding: 2px 5px;
+    /* border: 1px solid white; */
+    color: #DADAD9;
+    background-color: rgb(48, 45, 45);
+    width: 450px;
+    height: 60px;
+    align-items: center;
+}
+::placeholder{
+    color: #DADAD9;
+
+}
+.content .info .email a{
+    text-decoration: none;
+    border: 1px solid rgb(82, 77, 77);
+    /* text-transform: capitalize; */
+    color: #DADAD9;
+    /* letter-spacing: 1px; */
+    border-radius: 2px;
+    font-weight: 300;
+    font-size: 15px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    width: 220px;
+    /* border: 1px solid white; */
+    /* box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.212) ; */
+    background-color:#292929;
+    /* padding: 0px 50px; */
+}
+.content .info .email a i{
+    font-size: 25px;
+    width: 20px;
+    height: 40px;
+    padding-top: 5px;
+    /* border:  1px solid white; */
+}
+
+/* section */
+
+.part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 50px;
+    border-bottom: 8px solid rgba(128, 128, 128, 0.39);
+}
+.part1 .talk{
+    font-family: netflix;
+    width: 40%;
+}
+.part1 .talk h1{
+    font-size: 50px;
+    color: #DADAD9;
+    font-weight: 200;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+.part1 .talk p{
+    font-size: 20px;
+    color: #DADAD9;
+    /* padding-bottom: 20px; */
+    letter-spacing: 1px;
+}
+
+.part1 .image{
+    width: 55%;
+    /* height: 100%; */
+    /* border: 1px solid white; */
+}
+/* .part1 .image img{
+    width: 100%;
+    position: relative;
+    border: #e573c8 1px solid;
+} */
+
+.part1 .image video{
+    z-index: 1000;
+    border: 1px solid rgb(63, 61, 61);
+    margin-left: 15%;
+}
+.large{
+    margin-left: 15%;
+}
+.part2{
+    display: flex;
+    font-family: netflix;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 50px;
+    border-bottom: 8px solid rgba(128, 128, 128, 0.39);
+}
+
+/* .loading{
+    width: 400px;
+    margin-left: 70px;
+    margin-top: -20px;
+    height: 80px;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    border: #c4b8b8 3px solid;
+    border-radius: 5px ;
+}
+.loading img{
+    border: 1px solid white;
+    height: 70px;
+    padding: 2px 0px;
+    object-fit: contain;
+    width: 100px;
+}
+.words{
+    padding: 5px 5px;
+    display: flex;
+    border:  1px solid white;
+    flex-direction: column;
+    color: white;
+    width: 550px;
+} */
+
+.part2 .talk{
+    width: 48%;
+}
+.part2 .talk h1{
+    font-size: 50px;
+    color: #DADAD9;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+.part2 .talk p{
+    font-size: 20px;
+    color: #DADAD9;
+    /* padding-bottom: 20px; */
+    letter-spacing: 1px;
+}
+.part2 .image{
+    width: 45%;
+    /* border: #73B2E5 1px solid; */
+    margin-left: -120px;
+}
+.part2 .image img{
+    width: 100%;
+}
+
+/* FAQS */
+.faqs{
+    width: 60%;
+    display: flex;
+    font-family: netflix;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    color: #DADAD9;
+    /* border:  1px solid white; */
+}
+
+.faqs h1{
+font-size: 40px;
+padding: 10px 10px;
+}
+
+.accordion{
+    height: 80px;
+    width: 750px;
+    background-color: #0a0909ce;
+    color: #DADAD9;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: space-between;
+    align-items: center;
+    /* border:  1px solid white; */
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.textt{
+    background-color: #0a0909ce;
+    width: 750px;
+    line-height: 30px;
+    font-size: 15px;
+    padding: 10px;
+    color: #DADAD9;
+    font-weight: 400px;
+    display: none;
+    /* border:  1px solid white; */
+  
+}
+
+.accordion:after {
+    content: '\02795';  /* Unicode character for "plus" sign (+) */
+    font-size: 18px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+
+  }
+  
+  .active:after {
+    content:  '\2573'; /* Unicode character for "times" sign (x) */
+    font-size: 18px !important; 
+  }
+
+.content2 .info .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: netflix;
+    text-align: center;
+    margin-top: 30px;
+    align-items: center;
+    color: #DADAD9;
+}
+.content2 .info .heading p{
+    font-size: 16px;
+    /* letter-spacing: 1px; */
+    font-weight: 400;
+    padding: 15px 0px;
+}
+.content2 .info .email{
+    display: flex;
+    font-family: netflix;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.content2 .info .email #input{
+    font-size: 16px;
+    border-right: 1px solid rgb(146, 143, 143);
+    outline: none;
+    border-radius: 2px;
+    /* padding: 2px 5px; */
+    background-color: rgb(48, 45, 45);
+    width: 450px;
+    height: 60px;
+    color: #DADAD9;
+    align-items: center;
+}
+::placeholder{
+    color: #DADAD9;
+}
+.content2 .info .email a{
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    color: #DADAD9;
+    /* letter-spacing: 1px; */
+    /* border-radius: 1px; */
+    font-weight: 300;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid rgb(146, 143, 143); */
+    /* box-shadow: 0px 0px 2px rgba(22, 22, 22, 0.212) ; */
+    background-color: #1d1c1c;
+    padding: 0px 15px;
+}
+.content2 .info .email a i{
+    font-size: 35px;
+    width: 30px;
+    height: 40px;
+    /* border:  1px solid white; */
+}
+
+.dt{
+    border-top: 8px solid rgb(41, 40, 40);
+    height: 400px;
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+    justify-content: space-evenly;
+    margin-top: 200px;
+    width: 100%;
+}
+.ending{
+    display: flex;
+    flex-direction: column;
+
+}
+.elite{
+    padding: 20px 10px ;
+    color: #73B2E5 !important;
+}
+
+.nn p{
+  color: #DADAD9;
+  margin-left: 10%;
+ 
+}
+
+
+/* responsiveness */
+
+
+@media (max-width:1000px) {
+    .faqs{
+        width: 90%;
+       /* border:  1px solid white; */
+    }
+}
+@media (max-width:800px) {
+    .faqs{
+        width: 80%;
+       /* border:  1px solid white; */
+    }
+    .faqs h1{
+        font-size: 30px;
+        padding: 10px 10px;
+        }
+    
+    .accordion{
+        height: 80px;
+        width: 550px;
+    }
+    .textt{
+        background-color: #0a0909ce;
+        width: 550px; 
+    }
+    .part1{
+        flex-direction: column-reverse;
+    }
+  
+    .part1 .talk{
+        width: 80%;
+        text-align: center;
+    }
+    .part1 .talk h1{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    .part1 .talk p{
+        font-size: 20px;
+        color: #DADAD9;
+        padding-bottom: 20px;
+        letter-spacing: 1px;
+    }
+    
+    .part1 .image{
+        width: 75%;   
+        padding-left: 20px;
+  
+        padding-bottom: 20px;
+    }
+    
+    .part1 .image video{
+        z-index: 1000;
+        border: 1px solid rgb(63, 61, 61);
+        /* margin-left: 15%; */
+    }
+
+    .part2{
+        flex-direction: column;
+
+    }
+    
+    
+    .part2 .talk{
+        width: 90%;
+        text-align: center;
+    }
+    .part2 .talk h1{
+        font-size: 40px;
+        color: #DADAD9;
+        padding-bottom: 20px;
+ 
+    }
+    .part2 .talk p{
+        font-size: 20px;
+        color: #DADAD9;
+        /* padding-bottom: 20px; */
+        letter-spacing: 1px;
+    }
+    .part2 .image{
+        width: 75%;
+        /* border: #73B2E5 1px solid; */
+        padding-left: 20px;
+    }
+    .part2 .image img{
+        width: 100%;
+    }
+
+   
+}
+@media (max-width:670px) {
+    .content .info .email #input{
+        width: 350px;
+        height: 60px;
+    }
+    .content2 .info .email #input{
+        width: 350px;
+        height: 60px;
+    }
+  
+   
+}
+@media (max-width:582px) {
+    .container .netflix-header a{
+        padding: 4px 8px;
+    }
+
+    .content .info .heading h2{
+        font-size: 40px;
+
+    }
+
+    .part1 .talk{
+        width: 100%;
+    }
+    .part1 .talk h1{
+        font-size: 25px;
+        padding-bottom: 20px;
+  
+    }
+    .part1 .talk p{
+        font-size: 12px;
+    }
+    
+    .part1 .image{
+        width: 85%;
+    }
+
+    .part2 .talk{
+        width: 82%;
+    }
+    .part2 .talk h1{
+        font-size: 30px;
+       
+    }
+    .part2 .talk p{
+        font-size: 15px;
+    }
+  
+
+
+
+    .faqs{
+        width: 80%;
+       /* border:  1px solid white; */
+    }
+    .faqs h1{
+        font-size: 20px;
+        padding: 10px 10px;
+        }
+    
+    .accordion{
+        height: 50px;
+        width: 450px;
+        font-size: 15px;
+    }
+    .textt{
+        background-color: #0a0909ce;
+        width: 450px; 
+    }
+    .content .info .email #input{
+        width: 300px;
+        height: 50px;
+    }
+    .content .info .email a{
+        height: 50px;
+        width: 180px;
+    }
+    .content .info .email a i{
+        font-size: 25px;
+        width: 30px;
+        padding-left: 10px;
+        padding-top: 5px;
+        height: 40px;
+        /* border:  1px solid white; */
+    }
+    
+    .content2 .info .email #input{
+        width: 300px;
+        height: 50px;
+    }
+    .content2 .info .email a{
+        height: 50px;
+        width: 180px;
+    }
+    .content2 .info .email a i{
+        font-size: 25px;
+        width: 30px;
+        padding-left: 10px;
+        padding-top: 5px;
+        height: 40px;
+        /* border:  1px solid white; */
+    }
+    .elite{
+        padding: 20px 10px ;
+        font-size: 12px;
+        color: #73B2E5 !important;
+    }
+    .nn p{
+        color: #DADAD9;
+        margin-left: 2%;
+        font-size: 15px;
+       
+      }
+}
+@media (max-width:490px) {
+    .content .info .email #input{
+        width: 280px;
+        height: 50px;
+    }
+    .content .info .email a{
+        height: 50px;
+        width: 130px;
+    }
+    .content .info .email a i{
+        font-size: 26px;
+        width: 30px;
+        padding-left: 10px;
+        padding-top: 7px;
+        height: 40px;
+    }
+    .content2 .info .email #input{
+        width: 280px;
+        height: 50px;
+    }
+    .content2 .info .email a{
+        font-weight: 200;
+        font-size: 13px;
+        width: 140px;
+        height: 50px;
+    }
+    .content2 .info .email a i{
+        font-size: 20px;
+        width: 30px;
+        padding-left: 10px;
+        padding-top: 5px;
+        height: 30px;
+        /* border:  1px solid white; */
+    }
+
+    .faqs{
+        width: 60%;
+       /* border:  1px solid white; */
+    }
+    .faqs h1{
+        font-size: 15px;
+        padding: 10px 10px;
+        }
+    
+    .accordion{
+        height: 50px;
+        width: 400px;
+        font-size: 15px;
+    }
+    .textt{
+        background-color: #0a0909ce;
+        width: 400px; 
+    }
+}
+@media (max-width:420px) {
+    .content .info .email #input{
+        width: 250px;
+        height: 50px;
+    }
+    .content .info .email a{
+        height: 50px;
+        width: 130px;
+    }
+    .content .info .email a i{
+        font-size: 26px;
+        width: 30px;
+        padding-left: 10px;
+        padding-top: 7px;
+        height: 40px;
+    }
+    .content2 .info .email #input{
+        width: 250px;
+        height: 50px;
+    }
+    .content2 .info .email a{
+        font-weight: 200;
+        font-size: 13px;
+        width: 140px;
+        height: 50px;
+    }
+    .content2 .info .email a i{
+        font-size: 20px;
+        width: 30px;
+        padding-left: 10px;
+        padding-top: 5px;
+        height: 30px;
+        /* border:  1px solid white; */
+    }
+    .part2 .image{
+        width: 45%;
+        /* border: #73B2E5 1px solid; */
+        margin-left: -50px;
+    }
+    .part2 .talk{
+        width: 100%;
+    }
+    .part2 .talk h1{
+        font-size: 20px;
+    }
+    .part2 .talk p{
+        font-size: 15px;
+        color: #DADAD9;
+        /* padding-bottom: 20px; */
+        letter-spacing: 1px;
+    }
+
+    .faqs{
+        width: 70%;
+       /* border:  1px solid white; */
+    }
+    .faqs h1{
+        font-size: 15px;
+        padding: 10px 10px;
+        }
+    
+    .accordion{
+        height: 50px;
+        width: 300px;
+        font-size: 15px;
+    }
+    .textt{
+        background-color: #0a0909ce;
+        width: 300px; 
+    }
+}
+@media (max-width:385px) {
+    .container .netflix-header a{
+        padding: 3px 8px;
+        margin-right: 10px;
+ 
+    }
+    .content .info .email #input{
+     width: 150px;
+     height: 40px;
+     font-size: 12px;
+    }
+    .content .info .email a{
+        height: 40px;
+        font-size: 12px;
+        width: 130px;
+    }
+    .content .info .email a i{
+        font-size: 20px;
+        width: 3px;
+        padding-left: 5px;
+        padding-top: 5px;
+        height: 30px;
+    }
+   
+
+    .part1 .talk{
+        width: 80%;
+    }
+    .part1 .talk h1{
+        /* margin-left: -20px; */
+        font-size: 17px;
+    }
+    .part1 .talk p{
+        /* margin-left: -20px; */
+        font-size: 12px;
+    }
+    .part1 .image{
+        width: 85%;
+    }
+    .part2 .talk{
+        width: 100%;
+    }
+    .part2 .talk h1{
+        font-size: 15px;
+    }
+    .part2 .talk p{
+        font-size: 12px;
+    }
+    .part2 .image{
+        width:95%;
+    }
+
+ 
+    .faqs{
+        width: 80%;
+    }
+    .faqs h1{
+    font-size: 20px;
+    }
+    .content2 .info .email #input{
+        width: 160px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .content2 .info .email a{
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+    }
+    #q{
+      font-size: 10px;
+    }
+    .elite{
+      font-size: 10px;
+      margin-bottom: 1px;
+    }
+
+    .ending1{
+      margin-left: 20px;
+      margin-top: 40px;
+      width: 200px;
+    }
+    h4{
+      color: white;
+      margin-left: 20px;
+    }
+}
+@media (max-width:360px) {
+    .container .netflix-header a{
+        padding: 3px 8px;
+        margin-right: 10px;
+ 
+    }
+    .content .info .email #input{
+     width: 150px;
+     height: 40px;
+     font-size: 12px;
+    }
+    .content .info .email a{
+        height: 40px;
+        font-size: 12px;
+        width: 130px;
+    }
+    .content .info .email a i{
+        font-size: 20px;
+        width: 3px;
+        padding-left: 5px;
+        padding-top: 5px;
+        height: 30px;
+    }
+   
+
+    .part1 .talk{
+        width: 90%;
+    }
+    .part1 .talk h1{
+        /* margin-left: -20px; */
+        font-size: 17px;
+    }
+    .part1 .talk p{
+        /* margin-left: 0px; */
+        font-size: 12px;
+    }
+    .part1 .image{
+        width: 75%;
+    }
+    .part2 .talk{
+        width: 100%;
+    }
+    .part2 .talk h1{
+        font-size: 15px;
+    }
+    .part2 .talk p{
+        font-size: 12px;
+    }
+    .part2 .image{
+        width:75%;
+    }
+
+ 
+    .faqs{
+        width: 89%;
+    }
+    .faqs h1{
+    font-size: 15px;
+    }
+
+    .accordion{
+        width: 250px;
+        font-size: 12px;
+    }
+    .textt{
+        width: 250px;
+        font-size: 15px;
+    }
+    .content2 .info .email #input{
+        width: 160px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .content2 .info .email a{
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+    }
+    #q{
+      font-size: 10px;
+    }
+    .elite{
+      font-size: 10px;
+      margin-bottom: 1px;
+    }
+
+    .ending1{
+      margin-left: 20px;
+      margin-top: 40px;
+      width: 200px;
+    }
+    h4{
+      color: white;
+      margin-left: 20px;
+    }
+}
+@media (max-width:340px) {
+    .container .netflix-header a{
+        padding: 5px 10px;
+        margin-right: 10px;
+        
+ 
+    }
+    .content .info .email #input{
+     width: 150px;
+     height: 40px;
+     font-size: 12px;
+    }
+    .content .info .email a{
+        height: 40px;
+        font-size: 12px;
+        width: 130px;
+    }
+    .content .info .email a i{
+        font-size: 20px;
+        width: 3px;
+        padding-left: 5px;
+        padding-top: 5px;
+        height: 30px;
+    }
+   
+
+    .part1 .talk{
+        width: 90%;
+    }
+    .part1 .talk h1{
+        /* margin-left: -20px; */
+        font-size: 17px;
+    }
+    .part1 .talk p{
+        /* margin-left: 0px; */
+        font-size: 12px;
+    }
+    .part1 .image{
+        width: 85%;
+        /* border: 1px solid white; */
+        padding: 10px;
+    }
+    .part2 .talk{
+        width: 100%;
+    }
+    .part2 .talk h1{
+        font-size: 15px;
+    }
+    .part2 .talk p{
+        font-size: 12px;
+    }
+    .part2 .image{
+        width:85%;
+    }
+
+ 
+    .faqs{
+        width: 90%;
+    }
+    .faqs h1{
+    font-size: 15px;
+    }
+
+    .accordion{
+        width: 250px;
+        font-size: 12px;
+    }
+    .textt{
+        width: 250px;
+        font-size: 15px;
+    }
+    .content2 .info .email #input{
+        width: 160px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .content2 .info .email a{
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+    }
+    #q{
+      font-size: 10px;
+    }
+    .elite{
+      font-size: 10px;
+      margin-bottom: 1px;
+    }
+
+    .ending1{
+      margin-left: 20px;
+      margin-top: 40px;
+      width: 200px;
+    }
+    h4{
+      color: white;
+      margin-left: 20px;
+    }
+}
+@media (max-width:290px) {
+    .content .info .heading h2{
+        font-size: 38px;
+        /* width: 80%; */
+        letter-spacing: 2px;
+    }
+    .content .info .email #input{
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+       }
+       .content .info .email a{
+           height: 44px;
+           font-size: 12px;
+           width: 120px;
+       }
+       .content .info .email a i{
+        font-size: 20px;
+        width: 3px;
+        padding-left: 5px;
+        padding-top: 1px;
+        height: 20px;
+    }
+    .content2 .info .email #input{
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+
+    }
+    .content2 .info .email a{
+        height: 44px;
+           font-size: 12px;
+           width: 100px;
+        }
+        .content2 .info .email a i{
+            font-size: 20px;
+            width: 3px;
+            padding-left: 5px;
+          
+            padding-top: 1px;
+            height: 20px;
+    }
+
+
+    .faqs{
+        width: 70%;
+    }
+    .faqs h1{
+    font-size: 12px;
+    }  
+
+    .accordion{
+        width: 280px;
+    }
+    
+    .textt{
+        width: 280px;
+    }
+}

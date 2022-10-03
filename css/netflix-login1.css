@@ -1,0 +1,175 @@
+html body{
+    background-color: rgb(41, 41, 41);
+}
+@font-face {
+  font-family: netflix;
+  src: url(../fonts/netflix-sans-cufonfonts/NetflixSansBold.ttf);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  /* button-arrow */
+  /* ::-webkit-scrollbar-button{
+   
+  } */
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:rgb(31, 30, 30);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(106, 106, 106);
+    width: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(120, 120, 120);
+  }
+  .head{
+    border-bottom: 5px solid rgb(63, 62, 62);
+  }
+.sign{
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: netflix;
+    font-weight: 700 !important;
+    color: #C76ECC;
+}
+.sign:hover{
+    text-decoration: underline;
+    color: #C76ECC;
+}
+
+.writings{
+  width:30% ;
+  display: flex;
+  position: absolute;
+  left: 35%;
+  top: 15%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+  /* padding: 10px 0px; */
+  height: 70%;
+  flex-direction: column;
+}
+.steps{
+  color: #DCDCDC;
+  font-family: netflix;
+  padding: 10px 0px;
+}
+.btn{
+height: 60px;
+width: 300px !important;
+background: #BA0000 !important;
+font-size: 28px !important;
+font-weight: 450 !important;
+box-shadow: 2px 2px 2px rgb(153, 8, 8);
+}
+.btn:hover{
+  background: #ba0000ce !important; 
+}
+.dt{
+    border-top: 10px solid rgb(73, 72, 72);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    justify-content: space-evenly;
+  
+  }
+  .ending{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  }
+
+  .elite{
+  font-size: 15px;
+ padding: 20px 0px;
+ color:#73B2E5 !important;
+  }
+
+
+
+  @media (max-width:800px) {
+    .image{
+      /* border: 1px solid fuchsia; */
+      height: 140px;
+      width: 400px;
+    }
+  }
+
+ @media (max-width:719px) {
+ 
+   
+      .steps{
+        font-size: 20px !important;
+
+      }
+
+  }  
+ @media (max-width:419px) {
+ 
+   
+      .steps{
+        font-size: 15px !important;
+
+      }
+      .image{
+        /* border: 1px solid fuchsia; */
+        height: 100px;
+        width: 270px;
+      }
+
+  }  
+
+
+@media (max-width:390px) {
+  .heimg{
+    height: 50px !important;
+  }
+  .writings{
+    left: 32%;
+  }
+  .elite{
+    font-size: 12px;
+   padding: 10px 0px;
+   color:#73B2E5 !important;
+    }
+}
+@media (max-width:303px) {
+  .sign{
+   margin-top: 20px !important;
+    font-size: 16px !important;
+    /* font-family: netflix; */
+    font-weight: 400 !important;
+   
+}
+  .writings{
+    left: 32%;
+  }
+  .image{
+    /* border: 1px solid fuchsia; */
+    height: 80px;
+    width: 200px;
+  }
+  .elite{
+    font-size: 12px;
+   padding: 10px 0px;
+   color:#73B2E5 !important;
+    }
+    .btn{
+      height: 50px;
+      font-size: 24px !important;
+      width: 180px !important;
+      }
+}
