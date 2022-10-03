@@ -478,6 +478,13 @@ left: 10%;
 .nav-item{
   font-size: 11px;
 }
+.navbar-collapse{
+  position: absolute;
+  right: 30px;
+  top: 80%;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.486);
+}
 .kids{
   font-size: 11px;
 }

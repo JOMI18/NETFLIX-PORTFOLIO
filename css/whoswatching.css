@@ -166,7 +166,7 @@ html body{
 }
 @media (max-width:463px) {
   .writings{
-    top: 50%;
+    top: 70% !important; 
     width:70% ;
   }
   .writings h1{

@@ -105,6 +105,9 @@ background-color: rgb(26, 25, 25);
     top: 20%;
     height: 60%;
   }
+  .np{
+    font-size: 13px !important;
+  }
   .fp{
 display: none;
     }
